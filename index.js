@@ -1,4 +1,6 @@
 const http = require("http")
+require('dotenv').config()
+
 
 const app = () => {
     console.log('Hola mundo!!!')
@@ -6,5 +8,5 @@ const app = () => {
 
 const server = http.createServer(app)
 
-
-server.listen(3000)
+const PORT = process.env.PORT
+server.listen(PORT, ()=>{console.log("App corriendo en el puerto" + PORT)})
