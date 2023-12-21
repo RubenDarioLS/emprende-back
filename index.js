@@ -3,10 +3,10 @@ require('dotenv').config()
 
 
 const app = () => {
-    console.log('Hola mundo!!!')
+    console.log('Hola mundo!')
 }
 
 const server = http.createServer(app)
 
 const PORT = process.env.PORT
-server.listen(PORT, ()=>{console.log("App corriendo en el puerto" + PORT)})
+server.listen(PORT, () => { console.log("App corriendo en el puerto " + PORT) })
